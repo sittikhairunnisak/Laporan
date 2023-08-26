@@ -76,6 +76,14 @@ Model _RecommenderNet_ sesuai untuk metode _Collaborative Filtering_ karena mode
 
 Hasil top n rekomendasi yang diberikan oleh model _RecommenderNet_ akan disesuaikan dengan preferensi dan kesukaan pengguna. Rekomendasi ini akan mencakup buku-buku yang memiliki kesamaan karakteristik dengan buku-buku yang disukai dan dinilai tinggi oleh pengguna lain dengan preferensi serupa. Dengan demikian, model _RecommenderNet_ dapat memberikan rekomendasi buku yang relevan dan sesuai dengan minat pembaca.
 
+Untuk menghasilkan _output_ rekomendasi N  adalah dengan cara
+Menghitung skor kesamaan item berdasarkan semua peringkat pengguna lalu Identifikasi item N teratas yang paling mirip dengan item yang diminati.
+Buat daftar item yang belum pernah berinteraksi dengan pengguna target sebelumnya.
+Ulangi item yang belum ditonton dan buat prediksi skor untuk setiap item.
+Urutkan prediksi skor item yang belum ditonton dari tinggi ke rendah.
+Pilih item N teratas sebagai rekomendasi untuk pengguna target.
+Untuk menerapkan langkah-langkah ini, dapat menggunakan pendekatan pemfilteran kolaboratif berbasis item.
+
 ## Evaluation
 _RMSE (Root Mean Square Error)_ adalah metrik evaluasi yang digunakan untuk mengukur seberapa akurat model dalam memprediksi nilai.
 Fungsi _plt.plot()_ digunakan untuk memplot nilai _RMSE_ untuk kumpulan data pelatihan dan pengujian, yang disimpan dalam kamus _history.history_ masing-masing di bawah kunci _'root_mean_squared_error'_ dan _'val_root_mean_squared_error'._ 
@@ -83,6 +91,11 @@ Fungsi _plt.title(), plt.ylabel()_, dan _plt.xlabel()_ digunakan untuk menambahk
 Terakhir, fungsi _plt.legend()_ digunakan untuk menambahkan legenda ke plot yang menunjukkan baris mana yang sesuai dengan data pelatihan dan mana yang sesuai dengan data pengujian.
 Hasil yang didapatkan untuk _val_root_mean_squared_error_ adalah 0.4351 dan _aroot_mean_squared_error_ '0.4351.
 Untuk _loss_ pelatihan 0.6855  dan _val_loss_ 0.6844. Hasil _RMSE_ yang diperoleh menunjukkan hasil yang belom baik karena, Semakin kecil nilai _RMSE_, semakin baik performa model dalam memprediksi data. _RMSE_ yang rendah menunjukkan bahwa model memiliki tingkat akurasi yang tinggi.
+ada beberapa cara untuk memperbaiki nilai _RMSE_ yang kurang baik
+memeriksa Outlier yang dapat mempengaruhi nilai _RMSE_ secara signifikan. Menghapusnya atau memperlakukannya secara berbeda dapat meningkatkan akurasi model, Memilih fitur yang paling relevan dapat meningkatkan akurasi model dan mengurangi nilai _RMSE_
+Mencoba algoritme yang berbeda juga dapat membantu menemukan algoritme yang paling sesuai untuk masalah tertentu dan mengurangi nilai _RMSE_
+Meningkatkan jumlah data yang digunakan untuk melatih model dapat meningkatkan akurasinya dan mengurangi nilai _RMSE_
+dan juga bisa menggunakan validasi silang dapat membantu mengevaluasi performa model dan mengurangi nilai _RMSE_
 Gambar (1)  gambar hasil grafik plot ![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/67f7502a-4e17-4f0b-9cda-b932dcecc8b9)
 
 
