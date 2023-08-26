@@ -74,7 +74,8 @@ Setelah model dievaluasi, model _RecommenderNet_ dapat digunakan untuk memberika
 
 Model _RecommenderNet_ sesuai untuk metode _Collaborative Filtering_ karena model ini menggunakan data rating dari pengguna untuk mempelajari preferensi dan perilaku pembaca. Data rating ini digunakan untuk mengidentifikasi kesukaan dan preferensi pembaca terhadap buku tertentu. Dengan mempelajari preferensi dan perilaku pembaca, model _RecommenderNet_ dapat memberikan rekomendasi buku yang relevan dan sesuai dengan minat pembaca.
 Hasil Top-N Recommendation Hasil pengujian sistem rekomendasi dengan pendekatan _Collaborative Filtering_ sebagai berikut:
-gambar (1)![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/ceab7ef1-4014-4621-baf9-0337c0a1b2a8)
+gambar (1) ![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/5a0d2b31-58cf-4749-b227-4c428f2d7bec)
+
 
 ## Evaluation
 _RMSE (Root Mean Square Error)_ adalah metrik evaluasi yang digunakan untuk mengukur seberapa akurat model dalam memprediksi nilai.
