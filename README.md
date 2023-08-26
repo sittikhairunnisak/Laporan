@@ -73,16 +73,8 @@ Dan Setelah model dibangun, langkah selanjutnya adalah melakukan evaluasi terhad
 Setelah model dievaluasi, model _RecommenderNet_ dapat digunakan untuk memberikan rekomendasi buku kepada pengguna. Rekomendasi ini didasarkan pada kesamaan preferensi dan kesukaan pengguna dengan pengguna lain dalam dataset. Model akan mengidentifikasi buku-buku yang disukai oleh pengguna lain dengan preferensi serupa dan merekomendasikannya kepada pengguna.
 
 Model _RecommenderNet_ sesuai untuk metode _Collaborative Filtering_ karena model ini menggunakan data rating dari pengguna untuk mempelajari preferensi dan perilaku pembaca. Data rating ini digunakan untuk mengidentifikasi kesukaan dan preferensi pembaca terhadap buku tertentu. Dengan mempelajari preferensi dan perilaku pembaca, model _RecommenderNet_ dapat memberikan rekomendasi buku yang relevan dan sesuai dengan minat pembaca.
-
-Hasil top n rekomendasi yang diberikan oleh model _RecommenderNet_ akan disesuaikan dengan preferensi dan kesukaan pengguna. Rekomendasi ini akan mencakup buku-buku yang memiliki kesamaan karakteristik dengan buku-buku yang disukai dan dinilai tinggi oleh pengguna lain dengan preferensi serupa. Dengan demikian, model _RecommenderNet_ dapat memberikan rekomendasi buku yang relevan dan sesuai dengan minat pembaca.
-
-Untuk menghasilkan _output_ rekomendasi N  adalah dengan cara
-Menghitung skor kesamaan item berdasarkan semua peringkat pengguna lalu Identifikasi item N teratas yang paling mirip dengan item yang diminati.
-Buat daftar item yang belum pernah berinteraksi dengan pengguna target sebelumnya.
-Ulangi item yang belum ditonton dan buat prediksi skor untuk setiap item.
-Urutkan prediksi skor item yang belum ditonton dari tinggi ke rendah.
-Pilih item N teratas sebagai rekomendasi untuk pengguna target.
-Untuk menerapkan langkah-langkah ini, dapat menggunakan pendekatan pemfilteran kolaboratif berbasis item.
+Hasil Top-N Recommendation Hasil pengujian sistem rekomendasi dengan pendekatan _Collaborative Filtering_ sebagai berikut:
+gambar (1)![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/ceab7ef1-4014-4621-baf9-0337c0a1b2a8)
 
 ## Evaluation
 _RMSE (Root Mean Square Error)_ adalah metrik evaluasi yang digunakan untuk mengukur seberapa akurat model dalam memprediksi nilai.
@@ -96,7 +88,7 @@ memeriksa Outlier yang dapat mempengaruhi nilai _RMSE_ secara signifikan. Mengha
 Mencoba algoritme yang berbeda juga dapat membantu menemukan algoritme yang paling sesuai untuk masalah tertentu dan mengurangi nilai _RMSE_
 Meningkatkan jumlah data yang digunakan untuk melatih model dapat meningkatkan akurasinya dan mengurangi nilai _RMSE_
 dan juga bisa menggunakan validasi silang dapat membantu mengevaluasi performa model dan mengurangi nilai _RMSE_
-Gambar (1)  gambar hasil grafik plot ![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/67f7502a-4e17-4f0b-9cda-b932dcecc8b9)
+Gambar (2)  gambar hasil grafik plot ![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/67f7502a-4e17-4f0b-9cda-b932dcecc8b9)
 
 
 Referensi: [1.] Djamal,A Rhamadanus. Maharani, Warih dan Kurniati, Angelina Prima (2010). Analisis dan Implementasi Metode Item-Based Clustering Hybrid Pada Recomender Sytem 
