@@ -74,7 +74,19 @@ Setelah model dievaluasi, model _RecommenderNet_ dapat digunakan untuk memberika
 
 Model _RecommenderNet_ sesuai untuk metode _Collaborative Filtering_ karena model ini menggunakan data rating dari pengguna untuk mempelajari preferensi dan perilaku pembaca. Data rating ini digunakan untuk mengidentifikasi kesukaan dan preferensi pembaca terhadap buku tertentu. Dengan mempelajari preferensi dan perilaku pembaca, model _RecommenderNet_ dapat memberikan rekomendasi buku yang relevan dan sesuai dengan minat pembaca.
 Hasil Top-N Recommendation Hasil pengujian sistem rekomendasi dengan pendekatan _Collaborative Filtering_ sebagai berikut:
-gambar (1) ![image](https://github.com/sittikhairunnisak/Laporan/assets/132251307/5a0d2b31-58cf-4749-b227-4c428f2d7bec)
+|  no | Book Title                      |   
+|-----|---------------------------------|
+|  1  | Harper Mass Market Paperbacks   |   
+|  2  | Putnam Publishing Group         |   
+|  3  | Warner Books                    |   
+|  4  | Basic Books                     |   
+|  5  | HarperCollins (UK)              |   
+|  6  | Fireside                        |  
+|  7  | Ebury Press                     |   
+|  8  | Pocket                          |  
+| 9   | Goblinshead                     |   
+| 10  | Santillana S.A. (Alfaguara)     |
+
 
 
 ## Evaluation
